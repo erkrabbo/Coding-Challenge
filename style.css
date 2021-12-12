@@ -1,0 +1,88 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body{
+  background-image: url(background.jpg);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: sans-serif;
+}
+
+.contenitore{
+  width: 70%;
+  height: 680px;
+  margin: 1% auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 2%;
+}
+
+header{
+  text-align: center;
+}
+
+.logo{
+  width: 20%;
+  margin-top: 8%;
+}
+
+.logo-text{
+  color: #2fe114;
+}
+
+.menu-prenotazioni{
+  background-color: #2fe114;
+  padding: 5px;
+  margin: auto 10% auto 10%;
+  text-align: center;
+}
+
+menu > button{
+  font-size: 10px;
+  font-weight: 700;
+}
+
+/* modifico solo le proprietà per tenere ordinati i singoli blocchi */
+.monopattino{
+  margin: 20px 10%;
+  color: white;
+}
+
+.monopattino > h2{
+  display: inline-block;  /*per affiancarlo alla checkbox*/
+  font-size: 20px;
+}
+
+.monopattino > p{
+  font-size: 15px;
+  margin-top: 5px;
+}
+
+.posizione::before{
+  content: '\27FC';   /*simbolo freccia verso destra*/
+}
+
+.monopattino > .carica{   /*gestisco le caratteristiche comuni alle barre dello stato di carica*/
+  height: 25px;
+  border-radius: 5px;
+}
+
+/* differenzio colore e lunghezza delle barre a seconda della carica */
+.carica.media{
+  width: 60%;
+  background-color: #ffa500;
+
+}
+
+.carica.alta{
+  width: 80%;
+  background-color: #4feb00;
+}
+
+.carica.bassa{
+  width: 30%;
+  background-color: red;
+}

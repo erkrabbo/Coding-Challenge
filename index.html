@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Coding Challenge</title>
+
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <!-- creo un contenitore a cui ridurrò l'opacità per creare l'effetto di sovrapposizione -->
+    <div class="contenitore">
+
+      <header>
+        <img class="logo" src="logo.png">
+        <h1 class="logo-text">Taking booleaners from A to B</h1>
+      </header>
+
+      <menu class="menu-prenotazioni">
+        <button type="button">Prenota</button>
+        <button type="button">Termina prenotazione</button>
+        <button type="button">Accendi luci</button>
+      </menu>
+
+      <main>
+        <!-- creo un blocco replicabile -->
+        <div class="monopattino">
+          <input type="checkbox">
+          <h2>Monopattino Gino22</h2>
+          <!-- assegno una classe a p per andare ad inserire una entity tramite ::before -->
+          <p class="posizione"> Via Guadalametri - a 220 metri da te</p>
+          <p>Stato carica:</p>
+          <!-- assegno due classi per gestire i colori in base al livello della carica -->
+          <div class="carica media"></div>
+        </div>
+
+        <div class="monopattino">
+          <input type="checkbox">
+          <h2>Monopattino Mike24</h2>
+          <p class="posizione"> Via Ricciardoni - a 420 metri da te</p>
+          <p>Stato carica:</p>
+          <div class="carica alta"></div>
+        </div>
+
+        <div class="monopattino">
+          <input type="checkbox">
+          <h2>Monopattino Fede154</h2>
+          <p class="posizione"> Via Mentarini - a 490 metri da te</p>
+          <p>Stato carica:</p>
+          <div class="carica bassa"></div>
+        </div>
+
+      </main>
+    </div>
+  </body>
+</html>
